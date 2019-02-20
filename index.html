@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello World</title>
+    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <h1>¡Hello, World!</h1>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <div class="contenedor-profesion">
+                <div class="textos">
+                    <h1 class="nombre">Jonathan Nieto</h1>
+                    <h1 class="profesion">Desarrollador Web</h1>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="principal">
+
+        <section class="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/jon2.png" width="115" alt="Jonathan Nieto">
+                </div>
+
+                <div class="texto-acerca-de">
+                    <h3 class="titulo">Acerca de</h3>
+                    <p><span class="bold">Lorem ipsum dolor sit amet </span>consectetur adipisicing elit. Sunt
+                        blanditiis <span class="bold">perspiciatis voluptates eius veritatis maiores</span> delectus
+                        omnis neque at, mollitia sint id quis autem nulla dolore ipsum amet minus. Similique?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trabajos">
+            <div class="contenedor">
+                <h3 class="titulo">Trabajos</h3>
+
+                <div class="contenedor-trabajos">
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/1.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">HTML5 - CSS3 - PHP</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/2.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">Javascript</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/3.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">Angular</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/4.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">Spring</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/5.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">Android</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/6.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">Kotlin</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/7.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">.NET</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                            <img src="img/trabajos/8.jpg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Lorem, ipsum.</p>
+                            <p class="categoria">HTML5 - CSS3 - PHP</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <section class="contacto">
+                <h3 class="titulo">Contacto</h3>
+                <form action="" class="formulario">
+                    <input type="text" placeholder="Nombre" name="nombre" required>
+                    <input type="email" placeholder="Correo" name="correo" required>
+                    <textarea name="mensaje" placeholder="Mensaje:"></textarea>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+
+        <section class="redesociales">
+            <div class="contenedor">
+                <a class="linkedin" href="https://www.linkedin.com/in/jonathan-nieto-davila/" target=”_blank”><i
+                        class="fa fa-linkedin"></i></a>
+                <a class="facebook" href=""><i class="fa fa-facebook"></i></a>
+                <a class="github" href=""><i class="fa fa-github"></i></a>
+                <a class="twitter" href=""><i class="fa fa-twitter"></i></a>
+                <a class="instagram" href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+
+
 </body>
+
 </html>
