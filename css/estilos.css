@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Open Sans' ,Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    /* background-color: #CCC; */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* -------------- HEADER --------------------- */
+header{
+    /* background-image: url('img/bg.jpg'); */
+    background: url('../img/bg.jpg') #49a3d6;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 600px;
+}
+
+header .menu{
+    margin: 40px 0;
+    text-align: right;
+}
+
+header .menu a{
+    display: inline-block;
+    margin: 0 20px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+header .contenedor-profesion{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 8rem 0;
+}
+
+header .contenedor-profesion .textos{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 60px;
+    text-align: center; 
+    border-radius: 5px;
+    /* display: inline-block; */
+}
+
+header .contenedor-profesion .textos h1,
+header .contenedor-profesion .textos h2{
+    font-weight: 300;
+    margin: 0;
+    color: #ffffff;
+}
+
+header .contenedor-profesion .textos .nombre{
+    margin-bottom: .6rem;
+    font-size: 3rem;
+    font-weight: 3rem;
+}
+
+header .contenedor-profesion .textos .profesion{
+    font-size: 1.5rem;
+    font-weight: 1.5rem;
+}
+
+
+/* ------------------ principal ------------------ */
+
+/* pequeño truco */
+.principal .contenedor{
+    overflow: visible;
+}
+
+.principal .acerca-de{
+    text-align: center;
+}
+
+.principal .acerca-de .foto{
+    margin-top: -60px;
+}
+
+.principal .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.principal .acerca-de .texto-acerca-de{
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 2rem;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+.principal .acerca-de .texto-acerca-de .titulo{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+
+.principal .acerca-de .texto-acerca-de .bold{
+    text-decoration: underline;
+    color: #3895ea;
+}
+
+/* **********TRABAJOS************* */
+
+.principal .trabajos{
+    background-color: #f2f2f2;
+    padding: 60px 0;
+}
+
+.principal .trabajos .contenedor{
+    overflow: hidden;
+}
+
+.principal .trabajos .contenedor .titulo{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #323068;
+    text-align: center;
+}
+
+.principal .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo{
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+    font-weight: 700;
+    color: #3895ea;
+    margin-bottom: 10px;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
+    font-size: 14px;
+    color: #636363;
+}
+
+footer {
+    padding: 60px 0 0 0;
+}
+
+footer .contacto .titulo{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #000080;
+    text-align: center;
+}
+
+footer .contacto .formulario{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contacto .formulario input[ type="text"],
+footer .contacto .formulario input[ type="email"],
+footer .contacto .formulario textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .formulario input[ type="text"],
+footer .contacto .formulario input[ type="email"]{
+    width: 49%;
+    margin-bottom: 24px;
+}
+
+
+footer .contacto .formulario input[ type="text"]:focus,
+footer .contacto .formulario input[ type="email"]:focus,
+footer .contacto .formulario textarea:focus{
+    border: 2px solid #3895ea;
+}
+
+footer .contacto .formulario textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 24px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    min-height: 100px;
+    margin-bottom: 24px;
+}
+
+footer .contacto .formulario .boton{
+    margin: auto;
+    color: #ffffff;
+    background: #3895ea;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover{
+    background: #387bea;
+}
+
+footer .redesociales{
+    background-color: #1e2b38;
+    margin-top: 60px;
+    padding: 60px 0;
+
+}
+
+footer .redesociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redesociales a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 33px;
+    margin: 0 20px;
+}
+
+footer .redesociales a.twitter:hover{
+    background-color: #1da1f2;
+}
+
+footer .redesociales a.github:hover{
+    background-color: #333;
+}
+
+footer .redesociales a.instagram:hover{
+    background-color: #405de6;
+}
+
+footer .redesociales a.facebook:hover{
+    background-color: #3b5998;
+}
+
+footer .redesociales a.linkedin:hover{
+    background-color: #0077b5;
+}
+
+/*  rwd media queries */
+
+@media screen and (max-width:800px){
+    header .menu{
+        text-align: center;
+    }    
+    .principal .trabajos .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:500px){
+    header .contenedor-profesion .textos .nombre{
+        font-size: 35px;
+    }    
+    header .contenedor-profesion .textos .profesion{
+        font-size: 18px;
+    }
+    
+    .principal .trabajos .contenedor-trabajos .trabajo{
+        width: 100%;
+    }
+
+    footer .contacto .formulario input[ type="text"],
+    footer .contacto .formulario input[ type="email"]{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    footer .redesociales .contenedor{
+        flex-wrap: wrap;
+    }
+
+}
