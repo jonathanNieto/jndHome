@@ -1,0 +1,179 @@
+
+:root{
+    /* Font Variables */
+    --header-font: 'Dosis', sans-serif;
+    --button-font: 'Montserrat', sans-serif;
+
+    /*  Color Variables */
+    --gray: #2b2d30;
+    --blue: #2d7eff;
+    --teal: #10FFB4;
+    --purple: #8041F2;
+    --blue-gray: #3095ED;
+    --orange: #FF530D;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.contenedor{
+    margin: 10px  0 20px 0;
+    text-align: center;
+}
+div.contenedor div{
+    margin: 20px 0;
+    text-align: center;
+}
+.contenedor{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    border-radius: 20px;
+}
+.contenedor h1{
+    color: #fff;
+}
+.boton{
+    background: #32021f;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0 10px;
+}
+.boton:hover{
+    opacity: .4;
+}
+
+/* tamaños */
+.small{
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.medium{
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.big{
+    font-size: 18px;
+    padding: 20px 25px;
+}
+.extra-big{
+    font-size: 20px;
+    padding: 25px 30px;
+}
+
+/* colores */
+.blue{ background: #246eb6; }
+.green{ background: #4fb560; }
+.orange{ background: #f9a03f;}
+
+/* border-radius */
+.border-radius{
+    border-radius: 50px;
+}
+
+/* segunda parte de los botones */
+.contendedor2{
+    background: var(--gray);
+    padding: 20px;
+    /* flex-container */
+    display: flex;flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+    .contendedor2 h1{
+        color: whitesmoke;
+        font: 1.5em var(--header-font);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .contendedor2 .buttons{
+        /* flex-container */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* responsive web disegn */
+    @media (min-width: 417px) and (max-width: 567px){
+        .contendedor2 h1{ font-size: 2em}
+    }
+
+    @media (min-width: 568px){
+        .contendedor2 h1{ font-size: 3em}
+    }
+
+    .contendedor2 .buttons a{
+        padding: 15px 20px;
+        font: 13px var(--button-font);
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-align: center;
+        margin: 1em;
+    }
+
+    .contendedor2 .buttons a:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    }
+    /* responsive web disegn */
+    @media (min-width: 417px) and (max-width: 567px){
+        .contendedor2 .buttons a{
+            padding: 15px 30px;
+            font: 16px var(--button-font);
+        }
+    }
+
+    @media (min-width: 568px){
+        .contendedor2 .buttons a{
+            padding: 15px 50px;
+            font: 20px var(--button-font);            
+        }
+    }
+
+.button1{
+    color: #fff;
+    background: var(--blue);
+    border: 5px solid transparent;
+    transition: 0.5s ease;
+    border-radius: 50px;
+}
+
+    .button1:hover{
+        color: var(--blue);
+        background: #fff;
+        transform: scale(1.1);
+        border: 5px solid var(--blue);
+    }
+.button2{
+    color: #000;
+    background: var(--teal);
+    transition: .2s ease-in-out;
+    border-left: 3px transparent solid;
+    border-right: 3px solid transparent;
+}
+    .button2:hover{
+        color: var(--teal);
+        background: #000;
+        border-left: 3px var(--teal) solid;
+        border-right: 3px var(--teal) solid;
+    }
+
+.button3{
+    color: #fff;
+    background: linear-gradient(to right, var(--purple), var(--blue-gray));
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+    .button3:hover{
+        border-radius: 30px;
+    }
