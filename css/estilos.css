@@ -18,7 +18,6 @@ body{
 
 /* -------------- HEADER --------------------- */
 header{
-    /* background-image: url('img/bg.jpg'); */
     background: url('../img/bg.jpg') #49a3d6;
     background-repeat: no-repeat;
     background-position: center;
@@ -173,6 +172,17 @@ header .contenedor-profesion .textos .profesion{
     font-weight: 700;
     color: #3895ea;
     margin-bottom: 10px;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .descripcion .nombre a{
+    font-weight: 700;
+    color: #3895ea;
+    text-decoration: none;
+}
+
+.principal .trabajos .contenedor-trabajos .trabajo .descripcion .nombre a:hover{
+    text-decoration: underline;
+    opacity: .8;
 }
 
 .principal .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
